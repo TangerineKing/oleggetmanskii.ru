@@ -1,0 +1,729 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@keyframes move {
+  0% {
+    margin-bottom: 50px;
+  }
+  100% {
+    margin-bottom: 60px;
+  }
+}
+
+
+@keyframes border {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+
+50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+}
+100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+}
+}
+
+.bgall {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 210vh;
+}
+
+
+.navbar {
+  background-color: #f5f5f5;
+}
+
+.navbar-nav {
+  margin: 0 85px !important;
+}
+
+
+.nav-link {
+  color: #000 !important;
+  font-family: Montserrat !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  transition: all ease-in-out 0.3s;
+  }
+
+
+  .nav-link:hover {
+    color: #b90000 !important;
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end !important;
+  }
+  
+
+
+/* Home */
+
+
+.text-wrapper {
+  max-width: 950px;
+  margin: auto;
+  padding-top: 50px;
+  text-align: center;
+
+}
+
+
+.df {
+  display: flex;
+  justify-content: center;
+}
+
+
+.bor {
+  min-width: 350px;
+  min-height: 350px;
+  position: relative;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.main-photo {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    animation: border 10s ease-in-out 1s infinite;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 9px hsla(0,0%,100%,.3);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    overflow: hidden;
+  background-image: url("/src/assets/123.jpg")
+}
+
+
+
+
+
+.text-first {
+  font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+color: #000 !important;
+padding-top: 15px;
+}
+
+.animated-text {
+  font-family: Montserrat;
+font-size: 62px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+color: #000 !important;
+}
+.color-text {
+  color: #b90000;
+}
+
+.text-p {
+  color: #000;
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.button-about {
+  border-radius: 35px !important;
+background: #b90000 !important;
+border: #b90000 1px solid !important;
+width: 230px;
+height: 70px;
+color: #FFF;
+font-family: Montserrat !important;
+font-size: 20px !important;
+font-style: normal;
+font-weight: 600 !important;
+line-height: normal;
+text-transform: uppercase;
+margin: 0px 65px 0px 0px;
+}
+
+.button-about:hover {
+  border: #b90000 1px solid !important;
+  background: transparent !important;
+  color: #000;
+  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 0.4s linear !important;
+}
+
+
+.button-portf {
+  border-radius: 35px !important;
+background: transparent !important;
+border: #b90000 1px solid !important;
+width: 230px;
+height: 70px;
+color: #b90000 !important;
+font-family: Montserrat !important;
+font-size: 20px !important;
+font-weight: 600 !important;
+text-transform: uppercase;
+}
+
+.button-portf:hover {
+  border: #b90000 1px solid !important;
+  background: #b90000 !important;
+  transition: background-color 1s ease-in-out, color 0.5s 0.4s linear !important;
+  color: #FFF !important;
+}
+
+
+.social-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.social-icons li {
+  list-style-type:none;
+margin: 0 40px 0 0;
+
+}
+
+.scroll  {
+  border-left:3px #868686 solid ;
+  height: 100px;
+  align-items: center;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 45px;
+    margin-bottom: 69px;
+}
+
+
+.scroll {
+  animation-name: move;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction:alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode:none;
+  animation-play-state: running;
+}
+
+.scroll p {
+  text-transform:capitalize;
+  font-weight: 400;
+  font-size: 16px;
+  color: #868686;
+  font-family: Montserrat;
+  margin-left: 0px;
+  writing-mode: vertical-rl;
+  cursor: default;
+}
+
+/* About */
+
+.wrapper-h {
+  max-width: 350px;
+  text-align: center;
+}
+.wrapper-h h1{
+  color: #000;
+font-family: Montserrat;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+
+
+.photoabout {
+  padding-top: 30px;
+}
+
+.about-h {
+color: #000;
+font-family: Montserrat;
+font-size: 30px;
+font-style: condensed;
+font-weight: 600;
+}
+
+.brd {
+  border-bottom: 3px #383838 solid;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.brd p {
+  color: #000;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+}
+
+
+.download {
+  border-radius: 0% !important;
+  background: #000 !important;
+  border: 2px #000 solid !important;
+  width: 180px;
+  height: 50px;
+  color: #fff !important;
+  font-family: Montserrat !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  padding-top: 13px !important;
+  margin-top: 30px;
+}
+
+
+.download:hover {
+  background-color: transparent !important;
+  border: 2px #000 solid !important;
+  color: #000 !important;
+  transition: all ease-in-out .4s;
+}
+
+
+.bg-about {
+  margin-top: 50px;
+}
+
+
+.bg-about h3 {
+color: #000;
+text-align: center;
+font-family: Montserrat;
+font-size: 26px;
+font-weight: 500;
+padding-top: 40px;
+}
+
+.progress-inner, .background, .bar {
+  max-width: 550px;
+  position: relative;
+  height: 3px;
+}
+
+.progress-inner {
+  padding-top: 50px;
+  margin: 12px ;
+}
+
+.progress-inner span {
+  color: #000;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+font-style: italic;
+}
+
+
+.number {
+  float: right;
+}
+
+
+.background {
+  background: #d1d1d1 ;
+}
+
+.bar {
+  width: 100%;
+  height: 100%;
+}
+
+.bar_in {
+  background: #000;
+  height: 3px;
+}
+
+/* Portfolio */
+
+
+.wrapper_text h1{
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+/* Card */
+
+.card-h{
+  color: #fff;
+  padding: 25px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Montserrat;
+}
+
+
+.card-btn {
+  display: flex;
+    justify-content: space-evenly; 
+}
+
+.btn-port {
+  font-family: Montserrat;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-port:hover {
+  color: #000;
+  transition: all 0.3s;
+}
+
+
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+.hover-text-one {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	background: #527c82;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+.hover-text-one figure h3,
+.hover-text-one figure p, a {
+	margin: 0;
+}
+.hover-text-one figure p, a {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.effect-text-three {
+	background: #808080;
+}
+figure.effect-text-three img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(1.1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+figure.effect-text-three:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three figcaption {
+	text-align: left;
+}
+figure.effect-text-three h3 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+figure.effect-text-three h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+figure.effect-text-three:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.effect-text-three p, a{
+	padding: 1em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+figure.effect-text-three:hover p, a {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* Contact */
+
+.wrapper_text p{
+  color: #000;
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+}
+
+
+.f-contact {
+color: #000;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.6;
+}
+
+
+.s-contact:hover {
+  color: #bbb !important;
+}
+
+.s-contact {
+  color: #000;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 200;
+text-decoration: none;
+}
+
+.form_wrapper p{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+.form {
+  width: 45% !important;
+  border-radius: 36px !important;
+border: 2px solid #000 !important;
+background: #FFF !important;
+height: 50px !important;
+}
+
+.control {
+  height: 120px !important;
+  border-radius: 14px !important;
+border: 2px solid #000 !important;
+background: #FFF; 
+}
+
+
+.btn_contact {
+  border-radius: 36px !important;
+background: #b90000 !important;
+border: #b90000 2px solid !important;
+width: 35% !important;
+height: 50px;
+color: #FFF;
+font-family: Montserrat !important;
+font-size: 16px !important;
+font-style: normal;
+font-weight: 600 !important;
+line-height: normal;
+}
+
+
+.btn_contact:hover {
+  background: transparent !important;
+  border: #b90000 2px solid !important;
+  color: #000 !important;
+  transition: background-color 2s cubic-bezier(0.1, 0.8, 0.5, 2), color 0.3s linear !important;
+}
+
+
+
+.dialog-enter {
+  opacity: 0.01;
+  transform: scale(1.1);
+}
+
+.dialog-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 300ms;
+}
+
+.dialog-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.dialog-exit-active {
+  opacity: 0.01;
+  transform: scale(1.1);
+  transition: all 300ms;
+}
+
+
+.bg-port {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper-text {
+  text-align: center;
+}
+
+.wrapper-text h2 {
+  color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.container-port {
+  max-width: 90% !important;
+}
+
+.slidebody {
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slidebody button {
+  position: absolute;
+  bottom: 500px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  background-color: #090764;
+  border: 0px;
+  width: 20% !important;
+  height: 50px;
+  font-weight: 700;
+  font-family: Montserrat !important;
+font-size: 18px !important;
+}
+
+.slidebody button:hover {
+  background: #ee9f00 !important;
+  color: #000000 !important;
+  transition: all 0.2s 0.2s linear !important;
+}
+
+.slide {
+  height: 90vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex:1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 28px;
+  padding-top: 240px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  font-family: Montserrat !important;
+font-size: 28px !important;
+font-weight: 800;
+text-transform: capitalize;
+}
+
+
+.slide.active {
+  flex: 10;
+}
+
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.5s;
+}
+
+.slide.active button {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.5s;
+}
